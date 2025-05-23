@@ -1,0 +1,92 @@
+:root {
+    --primary: #22252c;
+    --secondary: #9f045c;
+    --dark-purple: #240115;
+    --eggshell: #f5f5f5;
+    --black: #000;
+
+    --main-font: "Roboto", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Globals */
+body {
+    background-color: var(--eggshell);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    color: var(--eggshell);
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--secondary);
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo {
+    margin: 3rem 0;
+}
+
+/* Navigation bar */
+.navigation {
+    background-color: var(--dark-purple);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.navigation__link {
+    color: var(--eggshell);
+    font-family: var(--main-font);
+    font-size: 2rem;
+}
+
+.navigation__link--active
+.navigation__link:hover {
+    color: var(--secondary);
+}
